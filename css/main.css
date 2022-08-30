@@ -37,10 +37,10 @@ ul {
 .btn {
   font-size: 24px;
   cursor: pointer;
+  overflow: hidden;
   text-decoration: none;
   border: 1px solid #da1755;
   position: relative;
-  overflow: hidden;
   color: white;
   padding: 10px 30px;
   text-transform: uppercase;
@@ -63,15 +63,41 @@ ul {
   height: 100%;
   background: linear-gradient(120deg, transparent, rgba(249, 0, 77, 0.4), transparent);
   transition: all 650ms;
+  animation-name: btnAnimation;
+  animation-duration: 10000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.btn:hover:before {
+.btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
   left: 100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(249, 0, 77, 0.4), transparent);
+  transition: all 650ms;
+}
+
+.btn:hover:after {
+  left: -100%;
 }
 
 @media screen and (min-width: 1200px) {
   .btn {
     font-size: 30px;
+  }
+}
+@keyframes btnAnimation {
+  0% {
+    left: -100%;
+  }
+  10% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
   }
 }
 .background {
