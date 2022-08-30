@@ -116,8 +116,20 @@ ul {
   font-weight: 700;
   color: #ffffff;
   text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
+@media screen and (min-width: 860px) {
+  .primary-header {
+    font-size: 38px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .primary-header {
+    font-size: 44px;
+  }
+}
 .icon-checked {
   width: 30px;
   height: 30px;
@@ -395,7 +407,7 @@ ul {
   position: relative;
   overflow: hidden;
   transition: transform 0.5s;
-  margin-top: 30px;
+  margin-top: 10px;
   max-width: 550px;
   max-height: 550px;
   margin-left: auto;
@@ -448,9 +460,6 @@ ul {
 }
 
 @media screen and (min-width: 860px) {
-  .primary-header {
-    font-size: 38px;
-  }
   .about-me__figure {
     margin-left: 30px;
     max-width: 440px;
@@ -544,7 +553,6 @@ ul {
 }
 .mix-mastering__header {
   margin-bottom: 30px;
-  font-weight: 700;
 }
 .mix-mastering__video {
   cursor: pointer;
@@ -660,7 +668,7 @@ ul {
     margin-top: 20px;
   }
   .desktop-video-box {
-    max-width: 650px;
+    max-width: 550px;
     padding-top: 20px;
     margin-right: 40px;
     display: flex;
@@ -670,18 +678,13 @@ ul {
 .studio {
   background-color: #191919;
 }
-.studio__header {
-  font-size: 32px;
-  font-weight: 600;
-}
-.studio_img {
+.studio__img {
   cursor: pointer;
-  -webkit-box-shadow: 0px 10px 24px -11px rgb(249, 0, 77);
-  -moz-box-shadow: 0px 10px 24px -11px rgb(249, 0, 77);
-  box-shadow: 0px 10px 24px -11px rgb(249, 0, 77);
+  margin-top: 30px;
+  width: 100%;
 }
-.studio__left {
-  width: 561px;
+.studio__content-box {
+  width: 100%;
 }
 .studio__content {
   margin-top: 15px;
@@ -698,7 +701,7 @@ ul {
   gap: 4px;
 }
 .studio__btn {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 .studio__icon {
   width: 30px;
@@ -706,6 +709,44 @@ ul {
   fill: #da1755;
 }
 
+@media screen and (min-width: 860px) {
+  .studio__content-box {
+    padding-top: 10px;
+  }
+  .studio__primary-header {
+    margin-bottom: 30px;
+  }
+  .studio__img {
+    width: 50%;
+  }
+  .studio__content {
+    font-size: 20px;
+  }
+  .studio__benefits {
+    font-size: 18px;
+  }
+  .studio__btn {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .studio__content-box {
+    padding-top: 30px;
+    padding-left: 40px;
+  }
+  .studio__content {
+    font-size: 28px;
+  }
+  .studio__benefits {
+    font-size: 22px;
+  }
+  .studio__img {
+    width: 50%;
+  }
+  .studio__btn {
+    margin-top: 0;
+  }
+}
 .mobile-menu {
   transform: translatex(-120%);
   position: fixed;
@@ -795,4 +836,68 @@ ul {
   width: 32px;
   height: 32px;
   fill: #da1755;
+}
+
+.opinions-section {
+  background-color: #101010;
+}
+.opinions-section__content-box {
+  background-color: #28282b;
+  border-radius: 12px;
+  background: #272525;
+  padding: 28px;
+  margin-top: 30px;
+  -webkit-box-shadow: 0px 3px 11px -6px rgb(218, 23, 85);
+  -moz-box-shadow: 0px 3px 11px -6px rgb(218, 23, 85);
+  box-shadow: 0px 3px 11px -6px rgb(218, 23, 85);
+}
+.opinions-section__img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.opinions-section__content {
+  font-size: 20px;
+  line-height: 1.25;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.opinions-section__reviewer {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 860px) {
+  .opinions-section__content-box {
+    max-width: 390px;
+  }
+  .opinions-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .opinions-section__content-box {
+    max-width: 557px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    transition: all 350ms;
+    cursor: pointer;
+  }
+  .opinions-section__content-box:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 3px 11px -6px rgb(218, 23, 85);
+    -moz-box-shadow: 0px 3px 11px -6px rgb(218, 23, 85);
+    box-shadow: 0px 3px 11px -6px rgb(218, 23, 85);
+  }
+  .opinions-section__list {
+    justify-content: center;
+    gap: 35px;
+  }
+  .opinions-section__content {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -2,7 +2,6 @@
   background-color: $backgroundColorTwo;
   &__header {
     margin-bottom: 30px;
-    font-weight: 700;
   }
   &__video {
     cursor: pointer;
@@ -129,7 +128,7 @@
     }
   }
   .desktop-video-box {
-    max-width: 650px;
+    max-width: 550px;
     padding-top: 20px;
     margin-right: 40px;
     display: flex;

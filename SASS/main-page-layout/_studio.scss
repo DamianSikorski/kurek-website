@@ -1,18 +1,14 @@
 .studio {
   background-color: $backgroundColorOne;
 
-  &__header {
-    font-size: 32px;
-    font-weight: 600;
-  }
-  &_img {
+  &__img {
     cursor: pointer;
-    -webkit-box-shadow: 0px 10px 24px -11px rgba(249, 0, 77, 1);
-    -moz-box-shadow: 0px 10px 24px -11px rgba(249, 0, 77, 1);
-    box-shadow: 0px 10px 24px -11px rgba(249, 0, 77, 1);
+    margin-top: 30px;
+
+    width: 100%;
   }
-  &__left {
-    width: 561px;
+  &__content-box {
+    width: 100%;
   }
   &__content {
     margin-top: 15px;
@@ -30,11 +26,56 @@
     gap: 4px;
   }
   &__btn {
-    margin-top: 25px;
+    margin-top: 15px;
   }
   &__icon {
     width: 30px;
     height: 30px;
     fill: $brandColorOne;
+  }
+}
+@media screen and (min-width: 860px) {
+  .studio {
+    &__content-box {
+      padding-top: 10px;
+    }
+    &__primary-header {
+      margin-bottom: 30px;
+    }
+    &__img {
+      width: 50%;
+    }
+
+    &__content {
+      font-size: 20px;
+    }
+
+    &__benefits {
+      font-size: 18px;
+    }
+    &__btn {
+      margin-top: 0;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .studio {
+    &__content-box {
+      padding-top: 30px;
+      padding-left: 40px;
+    }
+    &__content {
+      font-size: 28px;
+    }
+
+    &__benefits {
+      font-size: 22px;
+    }
+      &__img {
+      width: 50%;
+    }
+    &__btn {
+      margin-top: 0;
+    }
   }
 }
