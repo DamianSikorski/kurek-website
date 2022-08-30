@@ -1,0 +1,28 @@
+.page-footer {
+  background-color: $backgroundColorOne;
+  display: flex;
+  place-items: center;
+}
+.footer-contacts-section {
+  &__logo {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+  &__address {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+  }
+  &__link {
+    display: block;
+    margin-top: 10px;
+    color: $contentColor;
+    font-size: 26px;
+  }
+}

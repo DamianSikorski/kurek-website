@@ -5,11 +5,10 @@
   text-decoration: none;
   border: 1px solid $brandColorOne;
   position: relative;
-
+  display: inline-block;
   color: white;
   padding: 10px 30px;
   text-transform: uppercase;
-  display: inline-block;
   transition: transform 0.5s;
   background: transparent;
 }

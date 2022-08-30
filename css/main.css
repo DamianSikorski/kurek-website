@@ -21,8 +21,12 @@ ul {
   list-style: none;
 }
 
+address {
+  font-style: normal;
+}
+
 .logo {
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 700;
 }
 .logo__color {
@@ -41,10 +45,10 @@ ul {
   text-decoration: none;
   border: 1px solid #da1755;
   position: relative;
+  display: inline-block;
   color: white;
   padding: 10px 30px;
   text-transform: uppercase;
-  display: inline-block;
   transition: transform 0.5s;
   background: transparent;
 }
@@ -118,6 +122,7 @@ ul {
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
+  margin: 30px;
 }
 
 @media screen and (min-width: 860px) {
@@ -175,8 +180,8 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 .menu-toggle {
@@ -435,14 +440,12 @@ ul {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: transparent;
+  background: #28282b;
   display: block;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.5s ease-in-out;
-  border: 3px solid #da1755;
-  box-shadow: 0 0 20px #da1755;
 }
 .about-me__socials-link:hover, .about-me__socials-link:focus {
   border: 5px solid #da1755;
@@ -456,7 +459,7 @@ ul {
   width: 40px;
   height: 40px;
   transition: 0.5s;
-  fill: #da1755;
+  fill: #000000;
 }
 
 @media screen and (min-width: 860px) {
@@ -550,9 +553,6 @@ ul {
 }
 .mix-mastering {
   background-color: #101010;
-}
-.mix-mastering__header {
-  margin-bottom: 30px;
 }
 .mix-mastering__video {
   cursor: pointer;
@@ -713,9 +713,6 @@ ul {
   .studio__content-box {
     padding-top: 10px;
   }
-  .studio__primary-header {
-    margin-bottom: 30px;
-  }
   .studio__img {
     width: 50%;
   }
@@ -867,6 +864,13 @@ ul {
 .opinions-section__reviewer {
   font-size: 20px;
 }
+.opinions-section__btn {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 28px;
+  display: block;
+}
 
 @media screen and (min-width: 860px) {
   .opinions-section__content-box {
@@ -880,12 +884,13 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .opinions-section__content-box {
-    max-width: 557px;
+    max-width: 607px;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
     transition: all 350ms;
     cursor: pointer;
+    font-size: 12px;
   }
   .opinions-section__content-box:hover {
     transform: scale(1.05);
@@ -900,4 +905,31 @@ ul {
   .opinions-section__content {
     font-size: 24px;
   }
+}
+.page-footer {
+  background-color: #191919;
+  display: flex;
+  place-items: center;
+}
+
+.footer-contacts-section__logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer-contacts-section__list {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.footer-contacts-section__address {
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+}
+.footer-contacts-section__link {
+  display: block;
+  margin-top: 10px;
+  color: #757575;
+  font-size: 26px;
 }/*# sourceMappingURL=main.css.map */

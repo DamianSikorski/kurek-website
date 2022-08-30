@@ -27,6 +27,13 @@
   &__reviewer {
     font-size: 20px;
   }
+  &__btn {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
+    display: block;
+  }
 }
 @media screen and (min-width: 860px) {
   .opinions-section {
@@ -43,12 +50,13 @@
 @media screen and (min-width: 1200px) {
   .opinions-section {
     &__content-box {
-      max-width: 557px;
+      max-width: 607px;
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none;
       transition: all 350ms;
       cursor: pointer;
+      font-size: 12px;
       &:hover {
         transform: scale(1.05);
         -webkit-box-shadow: 0px 3px 11px -6px rgba(218, 23, 85, 1);
