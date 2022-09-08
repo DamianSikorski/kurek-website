@@ -24,5 +24,124 @@
     margin-top: 10px;
     color: $contentColor;
     font-size: 26px;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+      color: $brandColorOne;
+    }
+  }
+}
+.footer-socials-section {
+  margin-top: 20px;
+
+  &__list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: $matteBlack;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    border-color: $matteBlack;
+    will-change: transform;
+
+    &:hover,
+    &:focus {
+      border: 3px solid $brandColorOne;
+      box-shadow: 0 0 20px $brandColorOne;
+      transform: scale(1.1);
+      .footer-socials-section__social-icon {
+        fill: $brandColorOne;
+      }
+    }
+  }
+  &__social-icon {
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+  }
+}
+.footer-nav-section {
+  margin-top: 20px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    place-items: center;
+  }
+  &__link {
+    color: $black;
+    font-size: 24px;
+    font-weight: 500;
+    color: $contentColor;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+      color: $brandColorOne;
+    }
+  }
+}
+@media screen and (min-width: 860px) {
+  .page-footer {
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 120px;
+      row-gap: 40px;
+    }
+  }
+  .footer-contacts-section {
+    margin-left: auto;
+  }
+  .footer-socials-section {
+    margin-right: auto;
+  }
+  .footer-nav-section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 155px;
+      row-gap: 0px;
+    }
+  }
+  .footer-contacts-section {
+    &__logo {
+      text-align: start;
+    }
+    &__list {
+      gap: 5px;
+      place-items: start;
+    }
+  }
+  .footer-socials-section {
+    margin-top: 0px;
+
+    &__list {
+      gap: 20px;
+    }
+  }
+  .footer-nav-section {
+    margin-top: 0px;
+    &__list {
+      padding-left: 15px;
+      gap: 5px;
+      place-items: start;
+    }
+    &__link {
+      color: $black;
+      font-size: 24px;
+      font-weight: 500;
+      color: $contentColor;
+    }
   }
 }

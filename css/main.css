@@ -15,6 +15,7 @@ img {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul {
@@ -182,6 +183,19 @@ address {
   .section {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+}
+.footer-headers {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-headers {
+    text-align: normal;
+    font-size: 38px;
+    margin-bottom: 20px;
   }
 }
 .menu-toggle {
@@ -930,4 +944,116 @@ address {
   margin-top: 10px;
   color: #757575;
   font-size: 26px;
+  transition: color 0.2s ease-in-out;
+}
+.footer-contacts-section__link:hover {
+  color: #da1755;
+}
+
+.footer-socials-section {
+  margin-top: 20px;
+}
+.footer-socials-section__list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.footer-socials-section__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #28282b;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+  border-color: #28282b;
+  will-change: transform;
+}
+.footer-socials-section__link:hover, .footer-socials-section__link:focus {
+  border: 3px solid #da1755;
+  box-shadow: 0 0 20px #da1755;
+  transform: scale(1.1);
+}
+.footer-socials-section__link:hover .footer-socials-section__social-icon, .footer-socials-section__link:focus .footer-socials-section__social-icon {
+  fill: #da1755;
+}
+.footer-socials-section__social-icon {
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+}
+
+.footer-nav-section {
+  margin-top: 20px;
+}
+.footer-nav-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  place-items: center;
+}
+.footer-nav-section__link {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 500;
+  color: #757575;
+  transition: color 0.2s ease-in-out;
+}
+.footer-nav-section__link:hover {
+  color: #da1755;
+}
+
+@media screen and (min-width: 860px) {
+  .page-footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 120px;
+    row-gap: 40px;
+  }
+  .footer-contacts-section {
+    margin-left: auto;
+  }
+  .footer-socials-section {
+    margin-right: auto;
+  }
+  .footer-nav-section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 155px;
+    row-gap: 0px;
+  }
+  .footer-contacts-section__logo {
+    text-align: start;
+  }
+  .footer-contacts-section__list {
+    gap: 5px;
+    place-items: start;
+  }
+  .footer-socials-section {
+    margin-top: 0px;
+  }
+  .footer-socials-section__list {
+    gap: 20px;
+  }
+  .footer-nav-section {
+    margin-top: 0px;
+  }
+  .footer-nav-section__list {
+    padding-left: 15px;
+    gap: 5px;
+    place-items: start;
+  }
+  .footer-nav-section__link {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    color: #757575;
+  }
 }/*# sourceMappingURL=main.css.map */
