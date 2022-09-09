@@ -41,6 +41,7 @@
     position: relative;
     padding-top: 10px;
     &::after {
+      display: block;
       position: absolute;
       content: "";
       width: 204px;

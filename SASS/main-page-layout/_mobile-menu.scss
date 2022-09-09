@@ -73,6 +73,7 @@
   gap: 14px;
   margin-bottom: 70px;
   &::after {
+    display: block;
     position: absolute;
     content: "";
     width: 204px;
