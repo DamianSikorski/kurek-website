@@ -1,5 +1,9 @@
 .mix-benefits {
   background-color: $backgroundColorTwo;
+  // background-image: url(../images/background12.svg);
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
   &__header {
     max-width: 600px;
     padding: 0;
@@ -16,6 +20,7 @@
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
+    color: $contentColor;
   }
 }
 .benefits-list {
@@ -78,6 +83,32 @@
     &__content {
       text-align: center;
       font-size: 16px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container--mix-benefits {
+    max-width: 1300px;
+  }
+  .mix-benefits {
+    &__header {
+      max-width: 700px;
+    }
+
+    .benefits-list {
+      max-width: 100%;
+      justify-content: center;
+      gap: 100px;
+      &__item {
+        max-width: 450px;
+      }
+      &__icon {
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.15);
+        }
+      }
     }
   }
 }
