@@ -491,7 +491,7 @@ address {
   transition: opacity 0.25s, translate 0.25s;
   padding-top: 10px;
 }
-.about-me__socials-list:after {
+.about-me__socials-list::after {
   position: absolute;
   content: "";
   width: 204px;
@@ -828,7 +828,7 @@ address {
   gap: 14px;
   margin-bottom: 70px;
 }
-.mobile-menu-socials-list:after {
+.mobile-menu-socials-list::after {
   position: absolute;
   content: "";
   width: 204px;
@@ -969,7 +969,7 @@ address {
   position: relative;
   padding-top: 10px;
 }
-.footer-socials-section__list:after {
+.footer-socials-section__list::after {
   position: absolute;
   content: "";
   width: 204px;

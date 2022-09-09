@@ -112,7 +112,7 @@
     translate: -25px;
     transition: opacity 0.25s, translate 0.25s;
     padding-top: 10px;
-    &:after {
+    &::after {
       position: absolute;
       content: "";
       width: 204px;
