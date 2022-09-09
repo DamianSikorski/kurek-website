@@ -494,7 +494,7 @@ address {
 .about-me__socials-list:after {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 204px;
   height: 3px;
   background: #101010;
   left: 0px;
@@ -831,7 +831,7 @@ address {
 .mobile-menu-socials-list:after {
   position: absolute;
   content: "";
-  width: 33%;
+  width: 204px;
   height: 3px;
   background: #101010;
   left: 29px;
@@ -972,10 +972,10 @@ address {
 .footer-socials-section__list:after {
   position: absolute;
   content: "";
-  width: 80%;
+  width: 204px;
   height: 3px;
   background: #101010;
-  left: 25px;
+  left: 40px;
   top: 75px;
   box-shadow: 1px 1px 10px 5px rgba(249, 0, 77, 0.4);
 }
