@@ -828,6 +828,16 @@ address {
   gap: 14px;
   margin-bottom: 70px;
 }
+.mobile-menu-socials-list:after {
+  position: absolute;
+  content: "";
+  width: 33%;
+  height: 3px;
+  background: #101010;
+  left: 29px;
+  bottom: 60px;
+  box-shadow: 1px 1px 10px 5px rgba(249, 0, 77, 0.4);
+}
 .mobile-menu-socials-list__link {
   display: flex;
   align-items: center;
@@ -837,6 +847,7 @@ address {
   border-radius: 50%;
   background: transparent;
   border: 2px solid #da1755;
+  animation: float 5s ease-in-out infinite;
 }
 .mobile-menu-socials-list__icon {
   width: 32px;
