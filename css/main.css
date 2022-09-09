@@ -975,10 +975,10 @@ address {
   display: block;
   position: absolute;
   content: "";
-  width: 204px;
+  width: 224px;
   height: 3px;
   background: #101010;
-  left: 40px;
+  left: 27px;
   top: 75px;
   box-shadow: 1px 1px 10px 5px rgba(249, 0, 77, 0.4);
 }
