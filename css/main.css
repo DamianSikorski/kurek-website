@@ -29,6 +29,7 @@ address {
 .logo {
   font-size: 34px;
   font-weight: 700;
+  color: white;
 }
 .logo__color {
   color: #da1755;
@@ -1099,4 +1100,49 @@ address {
     font-weight: 500;
     color: #757575;
   }
+}
+.mix-hero {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background-image: url(../images/background9.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -70px;
+}
+.mix-hero__subheader {
+  font-size: 18px;
+  text-align: center;
+  background-color: #da1755;
+  width: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 0px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.mix-hero__header {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3;
+}
+.mix-hero__content {
+  font-size: 16px;
+  font-weight: 500;
+  color: #757575;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 1.7;
+  text-align: center;
+}
+.mix-hero__btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 2px solid #da1755;
+}
+.mix-hero__img {
+  width: 100%;
+  margin-top: 40px;
 }/*# sourceMappingURL=main.css.map */
