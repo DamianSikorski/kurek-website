@@ -491,7 +491,7 @@ address {
   transition: opacity 0.25s, translate 0.25s;
   padding-top: 10px;
 }
-.about-me__socials-list::after {
+.about-me__socials-list::before {
   display: block;
   position: absolute;
   content: "";
