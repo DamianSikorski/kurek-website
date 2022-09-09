@@ -65,6 +65,10 @@
     background-color: transparent;
     will-change: transform;
     animation: float 5s ease-in-out infinite;
+    transition: box-shadow 0.3s;
+    &:hover {
+      box-shadow: 1px 1px 25px 5px rgb(249 0 77 / 40%);
+    }
   }
 
   &__social-icon {
