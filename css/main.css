@@ -416,124 +416,23 @@ address {
 }
 .about-me__btn {
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 .about-me__img {
   width: 100%;
   border-radius: 8px;
-  position: relative;
   width: 100%;
   object-fit: cover;
-  opacity: 0.85;
-  scale: 1.15;
-  transition: opacity 0.25s, scale 0.35s;
-}
-.about-me__figure {
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  margin-top: 20px;
-  max-width: 550px;
-  max-height: 550px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 12px;
-}
-.about-me__figure:hover .about-me__figcaption::before {
-  opacity: 1;
-  scale: 1;
-}
-.about-me__figure:hover .about-me__figcaption-content, .about-me__figure:hover .about-me__figcaption-title, .about-me__figure:hover .about-me__socials-list {
-  opacity: 1;
-  translate: 0;
-}
-.about-me__figure:hover .about-me__img {
-  opacity: 0.3;
-  scale: 1;
 }
 .about-me__figcaption {
-  position: absolute;
-  inset: 0;
-  padding: 50px;
-  color: #fff;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 15px;
-  justify-content: center;
-}
-.about-me__figcaption::before {
-  content: "";
-  position: absolute;
-  inset: 20px;
-  border: 2px solid #fff;
-  opacity: 0;
-  scale: 1.25;
-  transition: opacity 0.25s, scale 0.25s;
-}
-.about-me__figcaption-title {
-  font-size: 38px;
-  opacity: 0;
-  translate: -25px;
-  transition: opacity 0.25s, translate 0.25s;
-}
-.about-me__figcaption-content {
-  font-size: 24px;
-  opacity: 0;
-  translate: -25px;
-  transition: opacity 0.25s, translate 0.25s;
-}
-.about-me__socials-list {
-  display: flex;
-  gap: 15px;
-  opacity: 0;
-  translate: -25px;
-  transition: opacity 0.25s, translate 0.25s;
-  padding-top: 10px;
-}
-.about-me__socials-list::before {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 204px;
-  height: 3px;
-  background: #101010;
-  left: 0px;
-  top: 70px;
-  box-shadow: 1px 1px 10px 5px rgba(249, 0, 77, 0.4);
-}
-.about-me__socials-link {
-  width: 55px;
-  height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transition: 0.3s ease-in-out;
-  border: 3px solid #da1755;
-  background-color: transparent;
-  will-change: transform;
-  animation: float 5s ease-in-out infinite;
-}
-.about-me__socials-link:hover, .about-me__socials-link:focus {
-  box-shadow: 0 0 20px #da1755;
-  transform: scale(1.1);
-  border: 3px solid #da1755;
-}
-.about-me__social-icon {
-  width: 35px;
-  height: 35px;
-  transition: 0.3s;
-  fill: #da1755;
+  display: none;
 }
 
 @media screen and (min-width: 860px) {
   .about-me__figure {
     margin-left: 30px;
     max-width: 440px;
-  }
-  .about-me__figcaption {
-    max-height: 460px;
+    margin-top: 30px;
   }
   .about-me__btn {
     margin-left: 0;
@@ -554,13 +453,113 @@ address {
   .about-me__main-content {
     font-size: 21px;
   }
+  .about-me__img {
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+    scale: 1.15;
+    transition: opacity 0.25s, scale 0.35s;
+  }
   .about-me__figure {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
     max-width: 550px;
     max-height: 550px;
-    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+  }
+  .about-me__figure:hover .about-me__figcaption::before {
+    opacity: 1;
+    scale: 1;
+  }
+  .about-me__figure:hover .about-me__figcaption-content, .about-me__figure:hover .about-me__figcaption-title, .about-me__figure:hover .about-me__socials-list {
+    opacity: 1;
+    translate: 0;
+  }
+  .about-me__figure:hover .about-me__img {
+    opacity: 0.3;
+    scale: 1;
   }
   .about-me__figcaption {
-    max-height: 600px;
+    position: absolute;
+    inset: 0;
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    justify-content: center;
+  }
+  .about-me__figcaption::before {
+    content: "";
+    position: absolute;
+    inset: 20px;
+    border: 2px solid #fff;
+    opacity: 0;
+    scale: 1.25;
+    transition: opacity 0.25s, scale 0.25s;
+  }
+  .about-me__figcaption-title {
+    font-size: 38px;
+    opacity: 0;
+    translate: -25px;
+    transition: opacity 0.25s, translate 0.25s;
+  }
+  .about-me__figcaption-content {
+    font-size: 24px;
+    opacity: 0;
+    translate: -25px;
+    transition: opacity 0.25s, translate 0.25s;
+  }
+  .about-me__socials-list {
+    display: flex;
+    gap: 15px;
+    opacity: 0;
+    translate: -25px;
+    transition: opacity 0.25s, translate 0.25s;
+    padding-top: 10px;
+  }
+  .about-me__socials-list::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 204px;
+    height: 3px;
+    background: #101010;
+    left: 0px;
+    top: 70px;
+    box-shadow: 1px 1px 10px 5px rgba(249, 0, 77, 0.4);
+  }
+  .about-me__socials-link {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    border: 3px solid #da1755;
+    background-color: transparent;
+    will-change: transform;
+    animation: float 5s ease-in-out infinite;
+  }
+  .about-me__socials-link:hover, .about-me__socials-link:focus {
+    box-shadow: 0 0 20px #da1755;
+    transform: scale(1.1);
+    border: 3px solid #da1755;
+  }
+  .about-me__social-icon {
+    fill: #da1755;
+    width: 35px;
+    height: 35px;
   }
 }
 .mix-mastering {
