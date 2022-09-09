@@ -116,12 +116,12 @@
     }
   }
 }
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 768px) {
   .page-footer {
     &__container {
       display: flex;
       flex-wrap: wrap;
-      column-gap: 120px;
+      column-gap: 95px;
       row-gap: 40px;
     }
   }
@@ -131,10 +131,18 @@
   .footer-socials-section {
     margin-right: auto;
     margin-left: auto;
+    &__list {
+      &::after {
+        left: 5px;
+      }
+    }
   }
   .footer-nav-section {
     margin-right: auto;
     margin-top: 0;
+    &__list {
+      gap: 1px;
+    }
   }
 }
 @media screen and (min-width: 1200px) {
@@ -160,6 +168,9 @@
 
     &__list {
       gap: 20px;
+      &::after {
+        left: 27px;
+      }
     }
   }
   .footer-nav-section {

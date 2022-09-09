@@ -144,7 +144,7 @@ address {
 
 .container {
   min-width: 320px;
-  max-width: 550px;
+  max-width: 650px;
   margin: 0 auto;
   padding-left: 25px;
   padding-right: 25px;
@@ -1036,11 +1036,11 @@ address {
   color: #da1755;
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 768px) {
   .page-footer__container {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 120px;
+    column-gap: 95px;
     row-gap: 40px;
   }
   .footer-contacts-section {
@@ -1050,9 +1050,15 @@ address {
     margin-right: auto;
     margin-left: auto;
   }
+  .footer-socials-section__list::after {
+    left: 5px;
+  }
   .footer-nav-section {
     margin-right: auto;
     margin-top: 0;
+  }
+  .footer-nav-section__list {
+    gap: 1px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1074,6 +1080,9 @@ address {
   }
   .footer-socials-section__list {
     gap: 20px;
+  }
+  .footer-socials-section__list::after {
+    left: 27px;
   }
   .footer-nav-section {
     margin-top: 0px;
@@ -1215,14 +1224,67 @@ address {
   margin-right: auto;
 }
 
-.benfits-list {
+.benefits-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.benfits-list__item {
-  max-width: 300px;
+.benefits-list__item {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.benfits-list__item::before {
-  background-image: url(../images/icons.svg);
+.benefits-list__icon {
+  width: 50px;
+  height: 50px;
+  fill: #da1755;
+}
+.benefits-list__header {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.benefits-list__content {
+  text-align: center;
+  font-size: 16px;
+}
+
+.container--mix-benefits {
+  max-width: 860px;
+}
+
+@media screen and (min-width: 860px) {
+  .mix-benefits {
+    background-color: #101010;
+  }
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .benefits-list__item {
+    margin: 0;
+  }
+  .benefits-list__icon {
+    width: 50px;
+    height: 50px;
+    fill: #da1755;
+  }
+  .benefits-list__header {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .benefits-list__content {
+    text-align: center;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */
