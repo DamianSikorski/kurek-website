@@ -465,10 +465,10 @@ address {
     transition: opacity 0.25s, scale 0.35s;
   }
   .about-me__figure {
+    margin-top: 0;
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    margin-top: 20px;
     max-width: 550px;
     max-height: 550px;
     margin-left: auto;
@@ -1140,7 +1140,6 @@ address {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  border: 2px solid #da1755;
 }
 .mix-hero__img {
   width: 100%;
