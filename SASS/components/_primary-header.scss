@@ -6,6 +6,9 @@
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 20px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 860px) {
   .primary-header {
@@ -16,5 +19,6 @@
   .primary-header {
     font-size: 44px;
     margin-bottom: 40px;
+    max-width: 750px;
   }
 }

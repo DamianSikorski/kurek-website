@@ -125,6 +125,9 @@ address {
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 20px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 860px) {
@@ -136,6 +139,7 @@ address {
   .primary-header {
     font-size: 44px;
     margin-bottom: 40px;
+    max-width: 750px;
   }
 }
 .icon-checked {
@@ -1362,6 +1366,11 @@ address {
   width: 60px;
   height: 60px;
   fill: #da1755;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.mix-offer-list__icon:hover {
+  transform: scale(1.15);
 }
 .mix-offer-list__header {
   font-size: 26px;
@@ -1404,5 +1413,92 @@ address {
   .mix-offer-list__item__content {
     text-align: center;
     font-size: 16px;
+  }
+}
+.collaboration {
+  background-color: #101010;
+}
+.collaboration__subheader {
+  text-align: center;
+  color: #da1755;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.collaboration-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.collaboration-list__item {
+  max-width: 490px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.collaboration-list__item::before {
+  content: "1 ";
+  font-size: 20px;
+  font-weight: 500;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #da1755;
+  border-radius: 4px;
+  position: absolute;
+}
+.collaboration-list__header {
+  padding-left: 40px;
+  margin-bottom: 6px;
+}
+.collaboration-list__content {
+  padding-left: 40px;
+  color: #757575;
+}
+
+.collaboration-list__item:nth-child(2)::before {
+  content: "2";
+}
+
+.collaboration-list__item:nth-child(3)::before {
+  content: "3";
+}
+
+.collaboration-list__item:nth-child(4)::before {
+  content: "4";
+}
+
+@media screen and (min-width: 860px) {
+  .collaboration__subheader {
+    font-size: 22px;
+  }
+  .collaboration-list__item {
+    max-width: 390px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .collaboration__subheader {
+    font-size: 24px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+  }
+  .collaboration-list__item {
+    max-width: 490px;
+    margin: 0;
+  }
+  .collaboration-list__header {
+    font-size: 26px;
+  }
+  .collaboration-list__content {
+    font-size: 20px;
+    padding-left: 40px;
+    color: #757575;
   }
 }/*# sourceMappingURL=main.css.map */

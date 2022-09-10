@@ -41,6 +41,11 @@
     width: 60px;
     height: 60px;
     fill: $brandColorOne;
+    transition: transform 0.3s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.15);
+    }
   }
   &__header {
     font-size: 26px;
