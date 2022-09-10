@@ -5,6 +5,7 @@
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 860px) {
   .primary-header {
@@ -14,5 +15,6 @@
 @media screen and (min-width: 1200px) {
   .primary-header {
     font-size: 44px;
+    margin-bottom: 40px;
   }
 }

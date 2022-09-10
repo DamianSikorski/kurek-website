@@ -47,15 +47,14 @@
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 10px;
+    text-align: center;
   }
   &__content {
     text-align: center;
     font-size: 16px;
   }
 }
-.container--mix-benefits {
-  max-width: 860px;
-}
+
 @media screen and (min-width: 860px) {
   .mix-benefits {
     background-color: $backgroundColorTwo;
@@ -87,9 +86,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .container--mix-benefits {
-    max-width: 1300px;
-  }
+ 
   .mix-benefits {
     &__header {
       max-width: 700px;

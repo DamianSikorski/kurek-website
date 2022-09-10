@@ -12,6 +12,9 @@
   padding-left: 25px;
   padding-right: 25px;
 }
+.container--wrap {
+  max-width: 860px;
+}
 
 @media screen and (min-width: 860px) {
   .container--flex {
@@ -28,5 +31,8 @@
   }
   .container-desktop-flex {
     display: flex;
+  }
+  .container--wrap {
+    max-width: 1300px;
   }
 }
