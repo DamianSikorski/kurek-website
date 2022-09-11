@@ -1,6 +1,9 @@
 .mix-offer {
-  background-color: $backgroundColorOne;
-
+  background-color: $backgroundColorTwo;
+  // background-image: url(../images/background12.svg);
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
   &__subheader {
     text-align: center;
     background-color: $brandColorOne;
