@@ -1,0 +1,173 @@
+.approach {
+  background-color: $backgroundColorTwo;
+  &__subheader {
+    background-color: $brandColorOne;
+    width: 150px;
+    padding: 6px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+  &__header {
+    width: 90%;
+  }
+  &__introduction {
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__content {
+    text-align: center;
+    font-size: 16px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.3;
+  }
+  &__icon-background {
+    margin-top: 20px;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: $brandColorOne;
+    border: 1px solid $brandColorOne;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 28px;
+    background-image: url(../images/background18.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // filter: blur(4px);
+  }
+  &__icon {
+    fill: $brandColorOne;
+
+    // filter: brightness(1.45);
+  }
+  &__unlimited-revisions {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+.approach-opinion-box {
+  width: 85%;
+  padding: 15px;
+  border: 1px solid $contentColor;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  margin-top: 20px;
+  &__img-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 3px solid $brandColorOne;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  &__content {
+    line-height: 1.3;
+  }
+  &__reviewer {
+    margin-top: 15px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 860px) {
+  .approach {
+    &__header {
+      width: 90%;
+    }
+
+    &__content {
+      text-align: start;
+      margin: 0;
+    }
+    &__icon-background {
+      width: 320px;
+      height: 320px;
+    }
+
+    &__unlimited-revisions {
+      text-align: start;
+    }
+  }
+  .approach-opinion-box {
+    margin-left: 0;
+    position: relative;
+    &__img-border {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    &__content {
+      padding-left: 65px;
+    }
+    &__reviewer {
+      text-align: start;
+      padding-left: 65px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .approach {
+    &__main-content-box {
+      width: 70%;
+    }
+    &__header {
+      width: 100%;
+    }
+    &__introduction {
+      max-width: 100%;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    &__content {
+      text-align: start;
+      margin: 0;
+      font-size: 18px;
+    }
+    &__icon-background {
+      width: 390px;
+      height: 320px;
+      margin-right: 30px;
+    }
+
+    &__unlimited-revisions {
+      margin-top: 35px;
+    }
+  }
+  .approach-opinion-box {
+    margin-left: 0;
+    position: relative;
+    &__img-border {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    &__content {
+      font-size: 18px;
+    }
+  }
+}
