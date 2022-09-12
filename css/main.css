@@ -215,50 +215,24 @@ address {
     margin-bottom: 20px;
   }
 }
-.js-scroll {
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.js-scroll.scrolled {
-  opacity: 1;
-}
-
-.scrolled.fade-in-bottom {
-  animation: fade-in-bottom 1s ease-in-out both;
-}
-
-@keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.js-scroll {
-  transform: scale(0);
-  transition: transform 1s;
-}
-
-.js-scroll.scrolled {
-  transform: scale(1);
-}
-
-.scrolled.fade-in-bottom {
-  animation: fade-in-bottom 0.5s ease-in-out both;
-}
-
-@keyframes fade-in-bottom {
-  0% {
+@media screen and (min-width: 1200px) {
+  .js-scroll {
     transform: scale(0);
+    transition: transform 1s;
   }
-  100% {
+  .js-scroll.scrolled {
     transform: scale(1);
+  }
+  .scrolled.fade-in-bottom {
+    animation: fade-in-bottom 0.5s ease-in-out both;
+  }
+  @keyframes fade-in-bottom {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
 .menu-toggle {
