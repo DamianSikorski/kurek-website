@@ -1572,11 +1572,14 @@ address {
 .approach-opinion-box {
   width: 85%;
   padding: 15px;
-  border: 1px solid #757575;
+  background-color: black;
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
   margin-top: 20px;
+  -webkit-box-shadow: 0px 8px 24px -7px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 8px 24px -7px rgb(255, 255, 255);
+  box-shadow: 0px 8px 24px -7px rgb(255, 255, 255);
 }
 .approach-opinion-box__img-border {
   display: flex;
