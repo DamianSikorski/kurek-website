@@ -15,15 +15,15 @@
     place-items: center;
   }
   &__address {
-    font-size: 26px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 600;
     text-align: center;
   }
   &__link {
     display: block;
     margin-top: 10px;
     color: $contentColor;
-    font-size: 26px;
+    font-size: 22px;
     transition: color 0.2s ease-in-out;
     &:hover {
       color: $brandColorOne;
@@ -47,7 +47,7 @@
       width: 224px;
       height: 3px;
       background: $backgroundColorTwo;
-      left: 27px;
+      left: 9%;
       top: 75px;
       box-shadow: 1px 1px 10px 5px rgb(249 0 77 / 40%);
     }
@@ -169,7 +169,7 @@
     &__list {
       gap: 20px;
       &::after {
-        left: 27px;
+        left: 1%;
       }
     }
   }

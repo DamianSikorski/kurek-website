@@ -211,30 +211,20 @@ address {
 @media screen and (min-width: 1200px) {
   .footer-headers {
     text-align: normal;
-    font-size: 38px;
+    font-size: 30px;
     margin-bottom: 20px;
+    margin-top: 10px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .js-scroll {
-    transform: scale(0);
-    transition: transform 1s;
-  }
-  .js-scroll.scrolled {
-    transform: scale(1);
-  }
-  .scrolled.fade-in-bottom {
-    animation: fade-in-bottom 0.5s ease-in-out both;
-  }
-  @keyframes fade-in-bottom {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
+.js-scroll {
+  transform: scale(0);
+  transition: transform 1s;
 }
+
+.js-scroll.scrolled {
+  transform: scale(1);
+}
+
 .menu-toggle {
   border: none;
   background: transparent;
@@ -654,6 +644,7 @@ address {
 }
 .mix-mastering__btn {
   margin-top: 25px;
+  font-size: 22px;
 }
 
 @media screen and (min-width: 860px) {
@@ -821,8 +812,8 @@ address {
   top: 15px;
   right: 15px;
   border: none;
-  width: 46px;
-  height: 46px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 2px solid #da1755;
   background: transparent;
@@ -834,7 +825,7 @@ address {
 }
 
 .mobile-nav-list__link {
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 700;
   color: #ffffff;
   line-height: 1.7;
@@ -846,7 +837,7 @@ address {
   margin-bottom: 22px;
 }
 .mobile-contacts-list__link {
-  font-size: 26px;
+  font-size: 20px;
   color: #757575;
   font-weight: 600;
   line-height: 1.5;
@@ -856,17 +847,7 @@ address {
   display: flex;
   gap: 14px;
   margin-bottom: 70px;
-}
-.mobile-menu-socials-list::after {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 204px;
-  height: 3px;
-  background: #101010;
-  left: 29px;
-  bottom: 60px;
-  box-shadow: 1px 1px 10px 5px rgba(249, 0, 77, 0.4);
+  position: relative;
 }
 .mobile-menu-socials-list__link {
   display: flex;
@@ -883,6 +864,16 @@ address {
   width: 32px;
   height: 32px;
   fill: #da1755;
+}
+
+.line {
+  display: block;
+  position: absolute;
+  top: 70px;
+  width: 204px;
+  height: 3px;
+  background: #101010;
+  box-shadow: 1px 1px 10px 5px rgba(249, 0, 77, 0.4);
 }
 
 #slide-box-color-change {
@@ -906,15 +897,15 @@ address {
   place-items: center;
 }
 .footer-contacts-section__address {
-  font-size: 26px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 600;
   text-align: center;
 }
 .footer-contacts-section__link {
   display: block;
   margin-top: 10px;
   color: #757575;
-  font-size: 26px;
+  font-size: 22px;
   transition: color 0.2s ease-in-out;
 }
 .footer-contacts-section__link:hover {
@@ -939,7 +930,7 @@ address {
   width: 224px;
   height: 3px;
   background: #101010;
-  left: 27px;
+  left: 9%;
   top: 75px;
   box-shadow: 1px 1px 10px 5px rgba(249, 0, 77, 0.4);
 }
@@ -1054,7 +1045,7 @@ address {
     gap: 20px;
   }
   .footer-socials-section__list::after {
-    left: 27px;
+    left: 1%;
   }
   .footer-nav-section {
     margin-top: 0px;
