@@ -86,8 +86,9 @@
 .traces {
   padding: 5px 6px;
   background-color: rgba(218, 23, 85, 1);
-  width: 140px;
-  display: block;
+  width: 160px;
+  display: flex;
+  justify-content: center;
   border-radius: 4px;
   display: flex;
   align-items: center;
