@@ -37,7 +37,7 @@
     margin-right: auto;
     display: block;
 
-    width: 295px;
+    max-width: 295px;
     // border: 2px solid $brandColorOne;
   }
   &__img {
@@ -95,7 +95,7 @@
       margin-bottom: 20px;
     }
     &__btn {
-      width: 350px;
+      max-width: 345px;
       margin: 0;
       border: 2px solid $brandColorOne;
       margin-bottom: 50px;
