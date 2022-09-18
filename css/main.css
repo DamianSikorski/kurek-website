@@ -54,15 +54,13 @@ html {
   overflow: hidden;
   border: 1px solid #da1755;
   position: relative;
-  display: block;
+  display: inline-block;
   text-align: center;
   color: white;
-  padding: 9px 0px;
+  padding: 9px 20px;
   text-transform: uppercase;
   transition: transform 0.5s;
   background: transparent;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .btn:hover {
@@ -242,6 +240,12 @@ html {
 .text-link {
   color: #da1755;
   text-decoration: underline;
+}
+
+.centering-btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .menu-toggle {
@@ -1095,7 +1099,7 @@ html {
   font-size: 18px;
   text-align: center;
   background-color: #da1755;
-  max-width: 220px;
+  max-width: 210px;
   margin-left: auto;
   margin-right: auto;
   padding: 5px 0px;
@@ -1120,8 +1124,8 @@ html {
 .mix-hero__btn {
   margin-left: auto;
   margin-right: auto;
+  width: 250px;
   display: block;
-  max-width: 295px;
 }
 .mix-hero__img {
   width: 100%;
@@ -1178,7 +1182,7 @@ html {
     margin-bottom: 20px;
   }
   .mix-hero__btn {
-    max-width: 345px;
+    width: 350px;
     margin: 0;
     border: 2px solid #da1755;
     margin-bottom: 50px;
@@ -1482,8 +1486,11 @@ html {
   background-repeat: no-repeat;
 }
 .mix-opinions__btn {
-  max-width: 245px;
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 245px;
 }
 
 .swiper {
@@ -1547,7 +1554,7 @@ html {
     max-width: 400px !important;
   }
   .mix-opinions__btn {
-    max-width: 345px;
+    width: 345px;
   }
 }
 .approach {
@@ -2277,6 +2284,9 @@ html {
   margin-top: 15px;
   font-size: 18px;
   max-width: 270px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {

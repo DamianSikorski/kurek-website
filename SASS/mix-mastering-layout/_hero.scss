@@ -10,7 +10,7 @@
     font-size: 18px;
     text-align: center;
     background-color: $brandColorOne;
-    max-width: 220px;
+    max-width: 210px;
     margin-left: auto;
     margin-right: auto;
     padding: 5px 0px;
@@ -35,9 +35,9 @@
   &__btn {
     margin-left: auto;
     margin-right: auto;
+    width: 250px;
     display: block;
 
-    max-width: 295px;
     // border: 2px solid $brandColorOne;
   }
   &__img {
@@ -95,7 +95,7 @@
       margin-bottom: 20px;
     }
     &__btn {
-      max-width: 345px;
+      width: 350px;
       margin: 0;
       border: 2px solid $brandColorOne;
       margin-bottom: 50px;
