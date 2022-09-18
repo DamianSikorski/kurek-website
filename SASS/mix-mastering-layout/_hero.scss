@@ -2,7 +2,7 @@
   padding-top: 150px;
   padding-bottom: 50px;
   background-image: url(../images/background9.svg);
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: -70px;
@@ -27,8 +27,8 @@
     font-size: 16px;
     font-weight: 500;
     color: $contentColor;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     line-height: 1.3;
     text-align: center;
   }
@@ -36,6 +36,8 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+
+    width: 295px;
     // border: 2px solid $brandColorOne;
   }
   &__img {
@@ -77,13 +79,10 @@
     padding-top: 200px;
     padding-bottom: 120px;
     &__subheader {
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       margin-left: 0;
     }
     &__header {
-      font-size: 44px;
-      font-weight: 700;
-      max-width: 670px;
       line-height: 1.3;
       margin: 0;
       text-align: start;
@@ -93,11 +92,14 @@
       font-size: 22px;
       text-align: start;
       margin-left: 0;
+      margin-bottom: 20px;
     }
     &__btn {
+      width: 350px;
       margin: 0;
       border: 2px solid $brandColorOne;
-      display: none;
+      margin-bottom: 50px;
+      // display: none;
     }
     &__img {
       width: 50%;

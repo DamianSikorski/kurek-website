@@ -1,0 +1,121 @@
+.faq {
+  background-color: $backgroundColorOne;
+  &__introduction {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 25px;
+    padding: 0px 25px;
+  }
+  &__img {
+    display: none;
+  }
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  &__item {
+    border-bottom: 1px solid #ececec;
+  }
+  &__content {
+    font-size: 16px;
+    max-height: 0;
+
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.6s ease;
+
+    &.show {
+      max-height: 300px;
+      opacity: 1;
+      padding-top: 5px;
+      padding-bottom: 8px;
+      //   line-height: 1.3;
+    }
+  }
+}
+.faq-btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-bottom: 1px;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    width: 80%;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    margin-left: auto;
+    transition: rotate 0.3s ease-in-out;
+    &.rotate {
+      rotate: (90deg);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .faq {
+    &__introduction {
+      font-size: 22px;
+    }
+    &__header {
+      max-width: 100%;
+    }
+  }
+  .faq-btn {
+    &__title {
+      font-size: 28px;
+      width: 90%;
+      padding-bottom: 2px;
+    }
+    &__icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .faq-list {
+    max-width: 550px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .faq {
+    &__header {
+      max-width: 100%;
+    }
+    &__img {
+      display: block;
+      width: 30%;
+      margin-right: 20px;
+      max-height: 353px;
+      margin-top: 30px;
+    }
+  }
+  .faq-btn {
+    &__title {
+      font-size: 32px;
+      width: 90%;
+      padding-bottom: 2px;
+    }
+  }
+  .faq-list {
+    max-width: 850px;
+    gap: 8px;
+    &__content {
+      font-size: 24px;
+      &.show {
+        max-height: 250px;
+      }
+    }
+  }
+}

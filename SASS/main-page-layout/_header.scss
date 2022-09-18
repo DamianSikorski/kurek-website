@@ -47,7 +47,7 @@
   font-weight: 600;
   &:hover,
   &:focus {
-    transform: scale(1.21);
+    transform: scale(1.05);
     color: $brandColorOne;
   }
 }
@@ -87,6 +87,31 @@
   height: 10px;
   border-color: $brandColorOne;
 }
+// #current-side {
+//   color: $brandColorOne;
+//   &:after {
+//     display: block;
+//     content: "";
+//     position: absolute;
+//     width: 10px;
+//     height: 10px;
+//     left: 0;
+//     top: 0;
+//     border-top: 2px solid;
+//     border-left: 2px solid;
+//   }
+//   &:before {
+//     display: block;
+//     content: "";
+//     position: absolute;
+//     width: 10px;
+//     height: 10px;
+//     right: 0;
+//     bottom: 0;
+//     border-bottom: 2px solid;
+//     border-right: 2px solid;
+//   }
+// }
 
 @media screen and (min-width: 860px) {
   .nav__list {

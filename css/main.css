@@ -30,6 +30,10 @@ p {
   line-height: 1.3;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo {
   font-size: 34px;
   font-weight: 700;
@@ -51,12 +55,15 @@ p {
   text-decoration: none;
   border: 1px solid #da1755;
   position: relative;
-  display: inline-block;
+  display: block;
+  text-align: center;
   color: white;
   padding: 10px 30px;
   text-transform: uppercase;
   transition: transform 0.5s;
   background: transparent;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn:hover {
@@ -162,7 +169,7 @@ p {
 
 .big-container {
   min-width: 320px;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   padding-left: 25px;
   padding-right: 25px;
@@ -286,7 +293,7 @@ p {
   font-weight: 600;
 }
 .nav__link:hover, .nav__link:focus {
-  transform: scale(1.21);
+  transform: scale(1.05);
   color: #da1755;
 }
 
@@ -1079,7 +1086,7 @@ p {
   padding-top: 150px;
   padding-bottom: 50px;
   background-image: url(../images/background9.svg);
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: -70px;
@@ -1105,8 +1112,8 @@ p {
   font-size: 16px;
   font-weight: 500;
   color: #757575;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 20px;
   line-height: 1.3;
   text-align: center;
 }
@@ -1114,6 +1121,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  width: 295px;
 }
 .mix-hero__img {
   width: 100%;
@@ -1154,13 +1162,10 @@ p {
     padding-bottom: 120px;
   }
   .mix-hero__subheader {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     margin-left: 0;
   }
   .mix-hero__header {
-    font-size: 44px;
-    font-weight: 700;
-    max-width: 670px;
     line-height: 1.3;
     margin: 0;
     text-align: start;
@@ -1170,11 +1175,13 @@ p {
     font-size: 22px;
     text-align: start;
     margin-left: 0;
+    margin-bottom: 20px;
   }
   .mix-hero__btn {
+    width: 350px;
     margin: 0;
     border: 2px solid #da1755;
-    display: none;
+    margin-bottom: 50px;
   }
   .mix-hero__img {
     width: 50%;
@@ -1608,9 +1615,9 @@ p {
   margin-right: auto;
   border-radius: 4px;
   margin-top: 20px;
-  -webkit-box-shadow: 0px 8px 24px -7px rgb(255, 255, 255);
-  -moz-box-shadow: 0px 8px 24px -7px rgb(255, 255, 255);
-  box-shadow: 0px 8px 24px -7px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 9px 16px -7px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 9px 16px -7px rgb(255, 255, 255);
+  box-shadow: 0px 9px 16px -7px rgb(255, 255, 255);
 }
 .approach-opinion-box__img-border {
   display: flex;
@@ -2072,5 +2079,225 @@ p {
   }
   .guarantee__content-box {
     margin-right: auto;
+  }
+}
+.guarantee {
+  background-color: #101010;
+}
+.guarantee__header {
+  font-weight: 700;
+  font-size: 38px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.guarantee__img {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.guarantee__content {
+  font-size: 16px;
+  text-align: center;
+}
+.guarantee__content:nth-child(1) {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 760px) {
+  .guarantee__header {
+    font-size: 44px;
+  }
+  .guarantee__img {
+    width: 320px;
+  }
+  .guarantee__content {
+    font-size: 24px;
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .guarantee__content:nth-child(1) {
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .guarantee__header {
+    max-width: 500px;
+    margin-bottom: 40px;
+  }
+  .guarantee__img {
+    margin: 0;
+    margin-left: auto;
+  }
+  .guarantee__content {
+    font-size: 24px;
+    text-align: center;
+    max-width: 650px;
+  }
+  .guarantee__content-box {
+    margin-right: auto;
+  }
+}
+.faq {
+  background-color: #191919;
+}
+.faq__introduction {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 25px;
+  padding: 0px 25px;
+}
+.faq__img {
+  display: none;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+}
+.faq-list__item {
+  border-bottom: 1px solid #ececec;
+}
+.faq-list__content {
+  font-size: 16px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+.faq-list__content.show {
+  max-height: 300px;
+  opacity: 1;
+  padding-top: 5px;
+  padding-bottom: 8px;
+}
+
+.faq-btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-bottom: 1px;
+}
+.faq-btn__title {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  width: 80%;
+}
+.faq-btn__icon {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  margin-left: auto;
+  transition: rotate 0.3s ease-in-out;
+}
+.faq-btn__icon.rotate {
+  rotate: 90deg;
+}
+
+@media screen and (min-width: 768px) {
+  .faq__introduction {
+    font-size: 22px;
+  }
+  .faq__header {
+    max-width: 100%;
+  }
+  .faq-btn__title {
+    font-size: 28px;
+    width: 90%;
+    padding-bottom: 2px;
+  }
+  .faq-btn__icon {
+    width: 25px;
+    height: 25px;
+  }
+  .faq-list {
+    max-width: 550px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .faq__header {
+    max-width: 100%;
+  }
+  .faq__img {
+    display: block;
+    width: 30%;
+    margin-right: 20px;
+    max-height: 353px;
+    margin-top: 30px;
+  }
+  .faq-btn__title {
+    font-size: 32px;
+    width: 90%;
+    padding-bottom: 2px;
+  }
+  .faq-list {
+    max-width: 850px;
+    gap: 8px;
+  }
+  .faq-list__content {
+    font-size: 24px;
+  }
+  .faq-list__content.show {
+    max-height: 250px;
+  }
+}
+.ending {
+  background-color: #101010;
+}
+.ending__header {
+  text-align: center;
+  margin-bottom: 15px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ending__content {
+  text-align: center;
+  color: #757575;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ending__btn {
+  margin-top: 15px;
+  font-size: 15px;
+  max-width: 240px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .ending__header {
+    font-size: 28px;
+  }
+  .ending__content {
+    font-size: 16px;
+  }
+  .ending__btn {
+    font-size: 24px;
+    max-width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ending__header {
+    font-size: 38px;
+    max-width: 700px;
+  }
+  .ending__content {
+    font-size: 26px;
+    max-width: 700px;
   }
 }/*# sourceMappingURL=main.css.map */
