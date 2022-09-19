@@ -52,15 +52,15 @@
     }
     &__img {
       margin: 0;
-      margin-left: auto;
+      margin-right: auto;
     }
     &__content {
       font-size: 24px;
-      text-align: center;
+      text-align: start;
       max-width: 650px;
     }
     &__content-box {
-      margin-right: auto;
+      margin-left: auto;
     }
   }
 }
