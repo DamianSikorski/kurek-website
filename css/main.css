@@ -1125,6 +1125,8 @@ html {
   margin-right: auto;
   width: 250px;
   display: block;
+  padding-left: 0;
+  padding-right: 0;
 }
 .mix-hero__img {
   width: 100%;
@@ -2286,6 +2288,8 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media screen and (min-width: 768px) {
