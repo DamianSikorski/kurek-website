@@ -1,32 +1,28 @@
 .studio-price {
   background-color: $backgroundColorTwo;
-}
-.hour-price {
-  width: 220px;
-  &__content {
-    font-size: 14px;
-    width: 150px;
+  &__subheader {
+    text-align: center;
+    width: 70px;
+    background-color: $brandColorOne;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 3px 0px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
   }
-}
-.hour-price2 {
-  width: 210px;
-  &__content {
-    font-size: 14px;
-    width: 150px;
+  &__header {
+    max-width: 300px;
   }
-}
-.studio-fire-icon {
-  display: none;
-}
-@media screen and (min-width: 364px) {
-  .studio-fire-icon {
-    display: block;
+  &__description {
+    padding: 0px 25px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 16px;
   }
-}
-
-.benefit-canceled {
-  color: #838d95;
-  text-decoration: line-through;
 }
 .icon-canceled {
   width: 15px;
@@ -35,22 +31,288 @@
   margin-left: 3px;
   fill: #838d95;
 }
+.price-box {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid $brandColorOne;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  &__price {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  &__what-you-get {
+    font-size: 22px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  &__list-item {
+    display: flex;
+    gap: 5px;
+  }
+  &__list-icon {
+    width: 24px;
+    height: 24px;
+    fill: $brandColorOne;
+  }
+}
+.buy-btn {
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 8px;
+  width: 100%;
+  padding: 7px 15px;
+  border: none;
+  background-color: rgba(218, 23, 85, 0.8);
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+  will-change: transform;
+  &:hover {
+    background-color: rgba(218, 23, 85, 1);
+    transform: scale(1.03);
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+}
+
+.hour-price {
+  padding: 5px 6px;
+  background-color: rgba(218, 23, 85, 1);
+  max-width: 170px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top: 0;
+    border-bottom: 15px solid $backgroundColorTwo;
+    position: absolute;
+    bottom: 32px;
+    left: 135px;
+    transform: rotate(180deg);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+  }
+  &:hover.hour-price::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  &:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__content {
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    width: 130px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+    fill: white;
+  }
+}
+.hour-price2 {
+  padding: 5px 6px;
+  background-color: rgba(218, 23, 85, 1);
+  max-width: 304px;
+
+  justify-content: center;
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top: 0;
+    border-bottom: 15px solid $backgroundColorTwo;
+    position: absolute;
+    bottom: 100%;
+    left: 155px;
+    transform: rotate(180deg);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+  }
+  &:hover.hour-price2::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  &:hover .tooltip2 {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__content {
+    font-size: 14px;
+    max-width: 80%;
+    font-weight: 600;
+    margin-left: auto;
+  }
+  &__icon {
+    margin-right: auto;
+    width: 20px;
+    height: 20px;
+
+    fill: white;
+  }
+}
+.tooltip2 {
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  border-radius: 8px;
+  padding: 10px;
+  width: 240px;
+  position: absolute;
+  bottom: 127%;
+  left: 0%;
+  background-color: $backgroundColorTwo;
+  box-shadow: 1px 1px 10px 2px #4cbdff;
+
+  &__content {
+    text-align: center;
+    font-weight: 500;
+  }
+}
+.tooltip {
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  border-radius: 8px;
+  padding: 10px;
+  width: 240px;
+  position: absolute;
+  bottom: 45px;
+  left: -20px;
+  background-color: $backgroundColorTwo;
+  box-shadow: 1px 1px 10px 2px #4cbdff;
+
+  &__content {
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
 @media screen and (min-width: 860px) {
-  .hour-price2 {
-    width: 340px;
-    &__content {
-      width: 270px;
+  .tooltip2 {
+    left: 30%;
+  }
+  .hour-price2::after {
+    left: 85%;
+  }
+  .studio-price {
+    &__header {
+      max-width: 500px;
     }
   }
-  .studio-fire-icon {
-    display: none;
+  .price-box:nth-child(1) {
+    margin-right: 30px;
+    margin-left: auto;
+  }
+  .price-box:nth-child(2) {
+    margin-right: auto;
+  }
+  .price-box {
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {
+  .tooltip {
+    bottom: 50px;
+    left: 90px;
+  }
+  .tooltip2 {
+    left: 50%;
+  }
   .icon-canceled {
     width: 24px;
     height: 24px;
     margin-top: 5px;
     margin-right: 3px;
+  }
+  .buy-btn {
+    font-size: 24px;
+  }
+  .studio-price {
+    &__subheader {
+      font-size: 24px;
+      width: 100px;
+    }
+    &__header {
+      max-width: 1000px;
+    }
+    &__description {
+      max-width: 800px;
+      font-size: 24px;
+    }
+
+    .price-box {
+      max-width: 50%;
+      margin-top: 30px;
+      &__price {
+        font-size: 48px;
+      }
+      &__what-you-get {
+        font-size: 28px;
+      }
+
+      &__list-icon {
+        width: 36px;
+        height: 36px;
+      }
+      &__benefits {
+        font-size: 28px;
+      }
+    }
+  }
+  .hour-price {
+    max-width: 250px;
+    &__content {
+      font-size: 20px;
+      width: 180px;
+    }
+    &::after {
+      left: 200px;
+      bottom: 38px;
+    }
+  }
+  .hour-price2 {
+    max-width: 434px;
+
+    &__content {
+      font-size: 20px;
+    }
   }
 }
