@@ -2002,7 +2002,6 @@ html {
   }
   .price-section .price-box__price {
     font-size: 48px;
-    padding-right: 430px;
   }
   .price-section .price-box__what-you-get {
     font-size: 28px;
@@ -2538,6 +2537,7 @@ html {
   width: 220px;
 }
 .hour-price__content {
+  font-size: 14px;
   width: 150px;
 }
 
@@ -2545,6 +2545,7 @@ html {
   width: 210px;
 }
 .hour-price2__content {
+  font-size: 14px;
   width: 150px;
 }
 
