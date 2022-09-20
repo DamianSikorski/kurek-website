@@ -1,0 +1,8 @@
+.subheader--studio {
+  max-width: 200px;
+}
+@media screen and (min-width: 860px) {
+  .subheader--studio {
+    max-width: 450px;
+  }
+}

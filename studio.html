@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <title>Mix-Mastering</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="big-container">
+        <nav class="nav">
+          <a href="index.html" class="logo"
+            >Fayy<span class="logo__color">Records</span></a
+          >
+          <ul class="nav__list">
+            <li>
+              <a href="mix-mastering.html" id="current-side" class="nav__link"
+                >Mix Mastering</a
+              >
+            </li>
+            <li>
+              <a href="studio.html" class="nav__link">Studio Nagraniowe</a>
+            </li>
+            <li><a href="#" class="nav__link">Portfolio</a></li>
+            <li><a href="#" class="nav__link">Opinie</a></li>
+          </ul>
+          <button class="btn nav__btn">Kontakt</button>
+          <button class="menu-toggle open-menu">
+            <svg class="menu-toggle__icon">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="mobile-menu">
+        <button class="mobile-menu-btn close-menu">
+          <svg class="mobile-menu-btn__icon">
+            <use href="./images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="mobile-nav-list">
+            <li>
+              <a
+                href="mix-mastering.html"
+                class="mobile-nav-list__link mix-indicator"
+                >Mix Mastering</a
+              >
+            </li>
+            <li>
+              <a href="studio.html" class="mobile-nav-list__link"
+                >Studio Nagraniowe</a
+              >
+            </li>
+            <li>
+              <a href="#" class="mobile-nav-list__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-nav-list__link">Opinie</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mobile-contacts-list">
+          <li>
+            <a class="mobile-contacts-list__link" href="mailto:info@gmail.com">
+              fay-records@gmail.com
+            </a>
+          </li>
+          <li>
+            <a class="mobile-contacts-list__link" href="tel:+48111111111">
+              +48 341 412 523
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-menu-socials-list">
+          <li>
+            <a class="mobile-menu-socials-list__link">
+              <svg class="mobile-menu-socials-list__icon">
+                <use href="images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="mobile-menu-socials-list__link float-delay1">
+              <svg class="mobile-menu-socials-list__icon">
+                <use href="images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="mobile-menu-socials-list__link float-delay2">
+              <svg class="mobile-menu-socials-list__icon">
+                <use href="images/icons.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="line"></li>
+        </ul>
+      </section>
+      <section class="mix-hero">
+        <div class="big-container container-desktop-flex">
+          <section>
+            <p class="mix-hero__subheader subheader--studio">
+              Studio Nagraniowe Słubice, Lubuskie
+            </p>
+            <h1 class="mix-hero__header">
+              Nagraj swoją muzykę w profesjonalnym studiu
+            </h1>
+            <p class="mix-hero__content">
+              Pomagamy artystom, zespołom nagrać najlepsze brzmienie muzyki i
+              dostarczyć utwory w najwyższej jakości do ich słuchaczy.
+            </p>
+
+            <a href="#mix-benefits" class="btn mix-hero__btn"
+              >Dowiedz się więcej</a
+            >
+          </section>
+          <img
+            src="images/studio-hero.png"
+            alt="mix-masterings"
+            class="mix-hero__img"
+          />
+        </div>
+      </section>
+      <section class="section studio-offer">
+        <p class="studio-offer__subheader js-scroll">
+          Profesjonalne studio nagraniowe w Słubicach
+        </p>
+        <h2 class="primary-header studio-offer__header js-scroll">
+          Co otrzymasz nagrywając muzykę w naszym studiu?
+        </h2>
+        <div class="container container--wrap container-desktop-flex">
+          <ul class="studio-offer-list">
+            <li class="studio-offer-list__item">
+              <svg class="studio-offer-list__icon js-scroll">
+                <use href="images/icons.svg#icon-mic"></use>
+              </svg>
+              <h2 class="studio-offer-list__header js-scroll">
+                Profesjonalny sprzęt
+              </h2>
+              <p class="studio-offer-list__content js-scroll">
+                W naszym studiu znajdziesz wszystko, co jest potrzebne przy
+                zrealizować Twój utwór. Ty przynieś ze sobą pomysł, a my
+                pomożemy z całą resztą :)
+              </p>
+            </li>
+            <li class="studio-offer-list__item">
+              <svg class="studio-offer-list__icon js-scroll">
+                <use href="images/icons.svg#icon-time"></use>
+              </svg>
+              <h2 class="studio-offer-list__header js-scroll">Ślady w 24h</h2>
+              <p class="studio-offer-list__content js-scroll">
+                Wiemy, że chcesz szybko opublikować swoją muzykę i dlatego już w
+                ciągu 24h w otrzymasz od nas surowe ślady z sesji nagraniowej.
+              </p>
+            </li>
+            <li class="studio-offer-list__item">
+              <svg class="studio-offer-list__icon js-scroll">
+                <use href="images/icons.svg#icon-support"></use>
+              </svg>
+              <h2 class="studio-offer-list__header js-scroll">
+                Wsparcie na każdym kroku
+              </h2>
+              <p class="studio-offer-list__content js-scroll">
+                W trakcie nagrań możesz mieć dodatkowe pytania. Nasz realizator
+                będzie z Tobą w studiu i od razu pomoże z każdą niewiadomą.
+              </p>
+            </li>
+            <li class="studio-offer-list__item">
+              <svg class="studio-offer-list__icon js-scroll">
+                <use href="images/icons.svg#icon-file-music"></use>
+              </svg>
+              <h2 class="studio-offer-list__header js-scroll">
+                Zajmiemy się całym utworem - od A do Z
+              </h2>
+              <p class="studio-offer-list__content js-scroll">
+                Po nagraniu utworu możesz od razu u nas dać utwór do miksu i
+                masteringu. Wtedy kompleksowo zajmiemy się Twoją muzyką i
+                zrobimy wszystko, aby Twój utwór był od razu gotowy do
+                publikacji!
+              </p>
+            </li>
+          </ul>
+          <img
+            src="images/mix2.jpeg"
+            alt="mix-mastering"
+            class="mix-offer__img js-scroll"
+          />
+        </div>
+      </section>
+      <section class="section gallery">
+        <div class="container">
+          <p class="gallery__subheader">Kompleksowa usługa</p>
+          <h2 class="primary-header gallery__header">
+            Profesjonalne studio i analogowe brzmienie
+          </h2>
+          <p class="gallery__introduction">
+            Aby wyciągnąć najwięcej z każdego utworu, potrzebne są
+            profesjonalnie zaadoptowane studio i odsłuch. Dzięki temu możemy
+            nagrać każdy element oraz słyszeć i wprowadzać precyzyjne zmiany.
+            Zadbaliśmy, aby nasze studio miało idealną akustykę, odsłuch
+            światowej klasy i analogowe sprzęty. Wszystko po to, by pracując nad
+            Twoim utworem nie iść na żadne kompromisy i stworzyć najlepszą
+            muzykę.
+          </p>
+
+          <div class="gallery__grid">
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery3.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery20.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+
+            <figure class="gallery__item hidden-desktop">
+              <img
+                src="./images/gallery1.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery7.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery8.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+            <figure class="gallery__item hidden-tablet">
+              <img
+                src="./images/gallery9.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery10.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery12.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery13.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery15.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery16.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery17.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery18.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery19.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+            <figure class="gallery__item hidden-tablet">
+              <img
+                src="./images/gallery11.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="./images/gallery20.jpg"
+                alt="zdjęcię studia"
+                class="gallery__img"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="section mix-opinions">
+        <h2 class="primary-header studio-header js-scroll">
+          Zadowoleni klienci
+        </h2>
+        <p class="studio-opinions-content js-scroll">
+          Przeczytaj opinie klientów, którzy od lat korzystają z naszych usług.
+        </p>
+        <div class="swiper mySwiper js-scroll">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide-content-box">
+                <svg class="slide-content-box__icon">
+                  <use href="./images/icons.svg#icon-quote"></use>
+                </svg>
+                <p class="slide-content-box__content">
+                  Przez lata współpracy z Hugiz Records wielokrotnie
+                  doświadczyłam ich profesjonalizmu, pasji do muzyki i
+                  prawdziwej chęci pomocy. Dzięki nim projekty, które
+                  przeciągały się u mnie miesiącami, szybko zostawały
+                  zrealizowane na wysokim poziomie. Cenię ich zorganizowanie,
+                  wiedzę i kreatywne podejście do muzyki.
+                </p>
+                <img
+                  src="./images/mix4.jpg"
+                  alt="reviewer"
+                  class="slide-content-box__img"
+                />
+                <h3 class="slide-content-box__reviewer">Tomasz Kulpiński</h3>
+                <p class="slide-content-box__proffesion">Raper</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-box">
+                <svg class="slide-content-box__icon">
+                  <use href="./images/icons.svg#icon-quote"></use>
+                </svg>
+                <p class="slide-content-box__content">
+                  Przez lata współpracy z Hugiz Records wielokrotnie
+                  doświadczyłam ich profesjonalizmu, pasji do muzyki i
+                  prawdziwej chęci pomocy. Dzięki nim projekty, które
+                  przeciągały się u mnie miesiącami, szybko zostawały
+                  zrealizowane na wysokim poziomie. Cenię ich zorganizowanie,
+                  wiedzę i kreatywne podejście do muzyki.
+                </p>
+                <img
+                  src="./images/mix4.jpg"
+                  alt="reviewer"
+                  class="slide-content-box__img"
+                />
+                <h3 class="slide-content-box__reviewer">Tomasz Kulpiński</h3>
+                <p class="slide-content-box__proffesion">Raper</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-box">
+                <svg class="slide-content-box__icon">
+                  <use href="./images/icons.svg#icon-quote"></use>
+                </svg>
+                <p class="slide-content-box__content">
+                  Przez lata współpracy z Hugiz Records wielokrotnie
+                  doświadczyłam ich profesjonalizmu, pasji do muzyki i
+                  prawdziwej chęci pomocy. Dzięki nim projekty, które
+                  przeciągały się u mnie miesiącami, szybko zostawały
+                  zrealizowane na wysokim poziomie. Cenię ich zorganizowanie,
+                  wiedzę i kreatywne podejście do muzyki.
+                </p>
+                <img
+                  src="./images/mix4.jpg"
+                  alt="reviewer"
+                  class="slide-content-box__img"
+                />
+                <h3 class="slide-content-box__reviewer">Tomasz Kulpiński</h3>
+                <p class="slide-content-box__proffesion">Raper</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-box">
+                <svg class="slide-content-box__icon">
+                  <use href="./images/icons.svg#icon-quote"></use>
+                </svg>
+                <p class="slide-content-box__content">
+                  Przez lata współpracy z Hugiz Records wielokrotnie
+                  doświadczyłam ich profesjonalizmu, pasji do muzyki i
+                  prawdziwej chęci pomocy. Dzięki nim projekty, które
+                  przeciągały się u mnie miesiącami, szybko zostawały
+                  zrealizowane na wysokim poziomie. Cenię ich zorganizowanie,
+                  wiedzę i kreatywne podejście do muzyki.
+                </p>
+                <img
+                  src="./images/mix4.jpg"
+                  alt="reviewer"
+                  class="slide-content-box__img"
+                />
+                <h3 class="slide-content-box__reviewer">Tomasz Kulpiński</h3>
+                <p class="slide-content-box__proffesion">Raper</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-box">
+                <svg class="slide-content-box__icon">
+                  <use href="./images/icons.svg#icon-quote"></use>
+                </svg>
+                <p class="slide-content-box__content">
+                  Przez lata współpracy z Hugiz Records wielokrotnie
+                  doświadczyłam ich profesjonalizmu, pasji do muzyki i
+                  prawdziwej chęci pomocy. Dzięki nim projekty, które
+                  przeciągały się u mnie miesiącami, szybko zostawały
+                  zrealizowane na wysokim poziomie. Cenię ich zorganizowanie,
+                  wiedzę i kreatywne podejście do muzyki.
+                </p>
+                <img
+                  src="./images/mix4.jpg"
+                  alt="reviewer"
+                  class="slide-content-box__img"
+                />
+                <h3 class="slide-content-box__reviewer">Tomasz Kulpiński</h3>
+                <p class="slide-content-box__proffesion">Raper</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-box">
+                <svg class="slide-content-box__icon">
+                  <use href="./images/icons.svg#icon-quote"></use>
+                </svg>
+                <p class="slide-content-box__content">
+                  Przez lata współpracy z Hugiz Records wielokrotnie
+                  doświadczyłam ich profesjonalizmu, pasji do muzyki i
+                  prawdziwej chęci pomocy. Dzięki nim projekty, które
+                  przeciągały się u mnie miesiącami, szybko zostawały
+                  zrealizowane na wysokim poziomie. Cenię ich zorganizowanie,
+                  wiedzę i kreatywne podejście do muzyki.
+                </p>
+                <img
+                  src="./images/mix4.jpg"
+                  alt="reviewer"
+                  class="slide-content-box__img"
+                />
+                <h3 class="slide-content-box__reviewer">Tomasz Kulpiński</h3>
+                <p class="slide-content-box__proffesion">Raper</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-box">
+                <svg class="slide-content-box__icon">
+                  <use href="./images/icons.svg#icon-quote"></use>
+                </svg>
+                <p class="slide-content-box__content">
+                  Przez lata współpracy z Hugiz Records wielokrotnie
+                  doświadczyłam ich profesjonalizmu, pasji do muzyki i
+                  prawdziwej chęci pomocy. Dzięki nim projekty, które
+                  przeciągały się u mnie miesiącami, szybko zostawały
+                  zrealizowane na wysokim poziomie. Cenię ich zorganizowanie,
+                  wiedzę i kreatywne podejście do muzyki.
+                </p>
+                <img
+                  src="./images/mix4.jpg"
+                  alt="reviewer"
+                  class="slide-content-box__img"
+                />
+                <h3 class="slide-content-box__reviewer">Tomasz Kulpiński</h3>
+                <p class="slide-content-box__proffesion">Raper</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-box">
+                <svg class="slide-content-box__icon">
+                  <use href="./images/icons.svg#icon-quote"></use>
+                </svg>
+                <p class="slide-content-box__content">
+                  Przez lata współpracy z Hugiz Records wielokrotnie
+                  doświadczyłam ich profesjonalizmu, pasji do muzyki i
+                  prawdziwej chęci pomocy. Dzięki nim projekty, które
+                  przeciągały się u mnie miesiącami, szybko zostawały
+                  zrealizowane na wysokim poziomie. Cenię ich zorganizowanie,
+                  wiedzę i kreatywne podejście do muzyki.
+                </p>
+                <img
+                  src="./images/mix4.jpg"
+                  alt="reviewer"
+                  class="slide-content-box__img"
+                />
+                <h3 class="slide-content-box__reviewer">Tomasz Kulpiński</h3>
+                <p class="slide-content-box__proffesion">Raper</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content-box">
+                <svg class="slide-content-box__icon">
+                  <use href="./images/icons.svg#icon-quote"></use>
+                </svg>
+                <p class="slide-content-box__content">
+                  Przez lata współpracy z Hugiz Records wielokrotnie
+                  doświadczyłam ich profesjonalizmu, pasji do muzyki i
+                  prawdziwej chęci pomocy. Dzięki nim projekty, które
+                  przeciągały się u mnie miesiącami, szybko zostawały
+                  zrealizowane na wysokim poziomie. Cenię ich zorganizowanie,
+                  wiedzę i kreatywne podejście do muzyki.
+                </p>
+                <img
+                  src="./images/mix4.jpg"
+                  alt="reviewer"
+                  class="slide-content-box__img"
+                />
+                <h3 class="slide-content-box__reviewer">Tomasz Kulpiński</h3>
+                <p class="slide-content-box__proffesion">Raper</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn mix-opinions__btn">Zobacz więcej</a>
+      </section>
+      <section class="section map">
+        <div class="container">
+          <h2 class="primary-header">Gdzie jest studio?</h2>
+          <p class="map__content">
+            📌Adres: ul. Reja, 69-100 Słubice, woj. Lubuskie. Słubice to miasto
+            graniczne, blisko Frankfurtu (nad Odrą) oraz Berlina.
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6692.141938971236!2d18.810754756148953!3d53.01237864235001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471cc94973335e09%3A0xeb312341c328c3b6!2s87-123%20G%C5%82ogowo!5e0!3m2!1spl!2spl!4v1663626649921!5m2!1spl!2spl"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="map__iframe"
+          ></iframe>
+        </div>
+      </section>
+      <section class="section price-section studio-price">
+        <p class="price-section__subheader js-scroll">Cennik</p>
+        <h2 class="primary-header price-section__header js-scroll">
+          Wybierz pakiet dla siebie
+        </h2>
+        <p class="price-section__description js-scroll">
+          Możesz zamówić sesję nagraniową lub pakiet - nagranie oraz miks i
+          mastering Twojego utworu. Więcej o naszej usłudze miksu i masteringu
+          znajdziesz tutaj. W razie pytań napisz na:
+          <a class="text-link" href="mailto: fay-records@gmail.com"
+            >fay.records@gmail.com.</a
+          >
+        </p>
+
+        <div class="container container--flex">
+          <div class="price-box js-scroll">
+            <span class="traces hour-price"
+              ><p class="traces__content hour-price__content">
+                1h Nagrań w Studiu
+              </p>
+              <svg class="traces__icon">
+                <use href="./images/icons.svg#icon-tooltip"></use>
+              </svg>
+              <div class="tooltip">
+                <p class="tooltip__content">
+                  W dalszym kroku możesz zarezerwować więcej godziń w studiu
+                </p>
+              </div>
+            </span>
+            <p class="price-box__price">97 zł</p>
+            <p class="price-box__what-you-get">Co otrzymujesz:</p>
+            <ul class="price-box__list">
+              <li class="price-box__list-item">
+                <svg class="price-box__list-icon">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+                <p class="price-box__benefits">1h sesji nagraniowej w studiu</p>
+              </li>
+              <li class="price-box__list-item">
+                <svg class="price-box__list-icon">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+                <p class="price-box__benefits">Wsparcie realizatora</p>
+              </li>
+              <li class="price-box__list-item">
+                <svg class="price-box__list-icon">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+                <p class="price-box__benefits">Surowe ślady w 24h</p>
+              </li>
+              <li class="price-box__list-item">
+                <svg class="icon-canceled">
+                  <use href="./images/icons.svg#icon-x"></use>
+                </svg>
+                <p class="price-box__benefits benefit-canceled">
+                  Mix i mastering utworu (do 10 śladów)
+                </p>
+              </li>
+            </ul>
+            <a href="#" class="buy-btn">
+              <span>Wybierz ilość godzin i termin</span>
+              <svg class="buy-btn__icon studio-fire-icon">
+                <use href="./images/icons.svg#icon-fire"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="price-box js-scroll">
+            <span class="traces hour-price2"
+              ><p class="traces__content hour-price2__content">
+                1h Nagrań w Studiu + Mix Mastering
+              </p>
+              <svg class="traces__icon">
+                <use href="./images/icons.svg#icon-tooltip"></use>
+              </svg>
+              <div class="tooltip">
+                <p class="tooltip__content">
+                  W dalszym kroku możesz zarezerwować więcej godziń w studiu
+                </p>
+              </div></span
+            >
+
+            <p class="price-box__price">247zł</p>
+            <p class="price-box__what-you-get">Co otrzymujesz:</p>
+            <ul class="price-box__list">
+              <li class="price-box__list-item">
+                <svg class="price-box__list-icon">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+                <p class="price-box__benefits">1h sesji nagraniowej w studiu</p>
+              </li>
+              <li class="price-box__list-item">
+                <svg class="price-box__list-icon">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+                <p class="price-box__benefits">Wsparcie realizatora</p>
+              </li>
+              <li class="price-box__list-item">
+                <svg class="price-box__list-icon">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+                <p class="price-box__benefits">Surowe ślady w 24h</p>
+              </li>
+              <li class="price-box__list-item">
+                <svg class="price-box__list-icon">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+                <p class="price-box__benefits">
+                  Mix i mastering utworu (do 10 śladów)
+                </p>
+              </li>
+            </ul>
+            <a href="#" class="buy-btn">
+              <span>Wybierz ilość godzin i termin</span>
+              <svg class="buy-btn__icon studio-fire-icon">
+                <use href="./images/icons.svg#icon-fire"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer section">
+      <div class="container page-footer__container">
+        <section class="footer-contacts-section">
+          <a href="index.html" class="logo footer-contacts-section__logo"
+            >Fayy<span class="logo__color">Records</span></a
+          >
+
+          <address>
+            <ul class="footer-contacts-section__list">
+              <li class="footer-contacts-section__address">
+                ul. Reja, 69-100 Słubice.
+              </li>
+              <li>
+                <a
+                  class="footer-contacts-section__link"
+                  href="mailto:info@gmail.com"
+                >
+                  fay-records@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer-contacts-section__link"
+                  href="tel:+48111111111"
+                >
+                  +48 341 412 523
+                </a>
+              </li>
+            </ul>
+          </address>
+        </section>
+        <section class="footer-nav-section">
+          <h2 class="footer-headers">Przydatne linki</h2>
+          <ul class="footer-nav-section__list">
+            <li>
+              <a href="#" class="footer-nav-section__link">Mix Mastering</a>
+            </li>
+            <li>
+              <a href="#" class="footer-nav-section__link">Studio Nagraniowe</a>
+            </li>
+            <li>
+              <a href="#" class="footer-nav-section__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#" class="footer-nav-section__link">Opinie</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-socials-section">
+          <h2 class="footer-headers">Napisz do mnie</h2>
+          <ul class="footer-socials-section__list">
+            <li>
+              <a class="footer-socials-section__link">
+                <svg class="footer-socials-section__social-icon">
+                  <use href="images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-socials-section__link float-delay1">
+                <svg class="footer-socials-section__social-icon">
+                  <use href="images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-socials-section__link float-delay2">
+                <svg class="footer-socials-section__social-icon">
+                  <use href="images/icons.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/faq.js"></script>
+    <script defer src="./js/scrool-animation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
-.mix-offer {
-  background-color: $backgroundColorTwo;
+.studio-offer {
+  background-color: $backgroundColorOne;
   // background-image: url(../images/background12.svg);
   // background-position: center;
   // background-size: cover;
@@ -7,7 +7,7 @@
   &__subheader {
     text-align: center;
     background-color: $brandColorOne;
-    max-width: 300px;
+    max-width: 220px;
     padding: 7px 0px;
     border-radius: 12px;
     margin-left: auto;
@@ -28,7 +28,7 @@
     margin-top: 40px;
   }
 }
-.mix-offer-list {
+.studio-offer-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -62,7 +62,7 @@
 }
 
 @media screen and (min-width: 860px) {
-  .mix-offer {
+  .studio-offer {
     &__img {
       width: 80%;
       margin-top: 40px;
@@ -70,17 +70,40 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .mix-offer {
+  .studio-offer {
     &__img {
       width: 50%;
       margin-top: 0px;
     }
+    &__subheader {
+      max-width: 380px;
+    }
   }
-  .mix-offer-list {
-    justify-content: flex-start;
+  .studio-offer-list {
+    margin-right: 50px;
     &__item {
-      max-width: 267px;
-      gap: 10px;
+      padding-left: 40px;
+      max-width: 100%;
+
+      position: relative;
+    }
+    &__icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 30px;
+      height: 30px;
+      fill: $brandColorOne;
+    }
+    &__header {
+      font-size: 26px;
+      text-align: left;
+      margin-bottom: 10px;
+      margin-right: auto;
+    }
+    &__content {
+      text-align: start;
+      font-size: 16px;
     }
   }
 }

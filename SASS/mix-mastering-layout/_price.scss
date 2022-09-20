@@ -29,7 +29,7 @@
   margin-top: 20px;
   padding: 20px;
   border: 1px solid $brandColorOne;
-  max-width: 330px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
@@ -89,7 +89,7 @@
   width: 160px;
   display: flex;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   position: relative;
@@ -198,7 +198,6 @@
       &__list-icon {
         width: 36px;
         height: 36px;
-        fill: $brandColorOne;
       }
       &__benefits {
         font-size: 28px;

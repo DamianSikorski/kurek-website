@@ -1,0 +1,54 @@
+.studio-price {
+  background-color: $backgroundColorTwo;
+}
+.hour-price {
+  width: 220px;
+  &__content {
+    width: 150px;
+  }
+}
+.hour-price2 {
+  width: 210px;
+  &__content {
+    width: 150px;
+  }
+}
+.studio-fire-icon {
+  display: none;
+}
+@media screen and (min-width: 364px) {
+  .studio-fire-icon {
+    display: block;
+  }
+}
+
+.benefit-canceled {
+  color: #838d95;
+  text-decoration: line-through;
+}
+.icon-canceled {
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  margin-left: 3px;
+  fill: #838d95;
+}
+@media screen and (min-width: 860px) {
+  .hour-price2 {
+    width: 340px;
+    &__content {
+      width: 270px;
+    }
+  }
+  .studio-fire-icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icon-canceled {
+    width: 24px;
+    height: 24px;
+    margin-top: 5px;
+    margin-right: 3px;
+  }
+}
