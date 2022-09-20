@@ -2247,6 +2247,9 @@ html {
   .faq-list__content.show {
     max-height: 250px;
   }
+  .studio-faq-img {
+    margin-top: 60px;
+  }
 }
 .ending {
   background-color: #101010;
@@ -2529,6 +2532,11 @@ html {
     font-size: 24px;
   }
 }
+.benefit-canceled {
+  color: #838d95;
+  text-decoration: line-through;
+}
+
 .studio-price {
   background-color: #101010;
 }
