@@ -114,7 +114,7 @@
     opacity: 1;
     visibility: visible;
   }
-  &:hover .tooltip {
+  &:hover .traces-tooltip {
     opacity: 1;
     visibility: visible;
   }
@@ -131,7 +131,7 @@
     fill: white;
   }
 }
-.tooltip {
+.traces-tooltip {
   visibility: hidden;
   transition: opacity 0.5s ease-in-out;
   opacity: 0;
@@ -167,6 +167,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
+ 
   .buy-btn {
     font-size: 24px;
   }

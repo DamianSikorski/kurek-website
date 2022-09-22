@@ -1,6 +1,7 @@
 body {
   background-color: black;
   color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -899,7 +900,14 @@ html {
   box-shadow: 1px 1px 10px 5px rgba(249, 0, 77, 0.4);
 }
 
-#slide-box-color-change {
+.opinions {
+  background-image: url(../images/background10.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide-box-color-change {
   background-color: #191919;
 }
 
@@ -1928,7 +1936,7 @@ html {
   opacity: 1;
   visibility: visible;
 }
-.traces:hover .tooltip {
+.traces:hover .traces-tooltip {
   opacity: 1;
   visibility: visible;
 }
@@ -1945,7 +1953,7 @@ html {
   fill: white;
 }
 
-.tooltip {
+.traces-tooltip {
   visibility: hidden;
   transition: opacity 0.5s ease-in-out;
   opacity: 0;
@@ -1958,7 +1966,7 @@ html {
   background-color: #101010;
   box-shadow: 1px 1px 10px 2px #4cbdff;
 }
-.tooltip__content {
+.traces-tooltip__content {
   text-align: center;
   font-weight: 500;
 }
