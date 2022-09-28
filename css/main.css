@@ -1124,6 +1124,7 @@ html {
 .portfolio-list__video {
   display: block;
   width: 100%;
+  border: 0px;
 }
 .portfolio-list__title {
   text-align: center;
