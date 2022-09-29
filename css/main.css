@@ -1171,6 +1171,9 @@ html {
   .portfolio__header {
     margin-bottom: 40px;
   }
+  .portfolio__btn {
+    width: 300px;
+  }
   .portfolio-list {
     width: 100%;
     justify-content: center;
